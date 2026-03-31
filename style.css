@@ -1,0 +1,77 @@
+body{   
+    background-size: cover;  
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('background.svg');
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+}
+
+.choice img {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.choice:active img {
+    transform: scale(0.95);
+    filter: brightness(0.8);
+}
+
+.choice:hover img{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.compchoice{
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.compchoice img {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.winner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.compchoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
